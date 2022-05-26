@@ -1,5 +1,121 @@
 .mainhead {
-  background-color: aquamarine;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttonreturn {
+  position: absolute;
+}
+
+.search {
+  display: flex;
+  flex-direction: column;
+}
+
+.headcontainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(169, 169, 169, 0.24);
+  box-shadow: 0px -4px 0px 0px rgba(169, 169, 169, 0.418);
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(128, 128, 128, 0.048);
+}
+
+.span {
+  justify-content: center;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+}
+
+.filters {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  width: 90%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+p {
+  padding: 0%;
+  margin: 0%;
+}
+
+.restaurant {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(169, 169, 169, 0.24);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 10px;
+  border: 1px transparent black;
+  border-radius: 30px;
+  background-color: white;
+  box-shadow: 4px 4px 4px 2px rgba(128, 128, 128, 0.274), -4px -4px 4px 2px rgba(128, 128, 128, 0.11);
+}
+.card .text {
+  height: 20%;
+  padding-inline: 5px;
+}
+.card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border: 1px transparent black;
+  border-radius: 30px 30px 0px 0px;
+}
+
+.footercard {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 3px;
+  height: 20%;
+}
+.footercard h2 {
+  margin: 0%;
+}
+
+footer {
+  background-color: rgb(80, 78, 78);
+  color: white;
+}
+footer .headfooter {
+  width: 40%;
+  margin-left: 30px;
+  padding: 5px;
+}
+
+ul {
+  list-style: none;
+}
+ul li {
+  display: flex;
+  align-items: center;
+  padding-block: 10px;
+}
+ul li i {
+  padding-right: 5px;
 }
 
 /*# sourceMappingURL=tp3.css.map */

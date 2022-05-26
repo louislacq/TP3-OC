@@ -1,3 +1,8 @@
 .mainhead{
-    background-color: aquamarine;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.buttonreturn{
+    position: absolute;
 }
