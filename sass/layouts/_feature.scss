@@ -1,6 +1,7 @@
 .search{
     display: flex;
     flex-direction: column;
+    height: 30%;
 }
 .headcontainer{
     display: flex;
@@ -8,15 +9,15 @@
     justify-content: center;
     background-color: rgba(169, 169, 169, 0.24);
     box-shadow: 0px -4px 0px 0px rgba(169, 169, 169, 0.418);
-    
+    .text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(128, 128, 128, 0.048);
+    }
 }
-.text{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(128, 128, 128, 0.048);
-}
+
 .span{
     justify-content: center;
 }
@@ -29,4 +30,8 @@ aside{
     display: flex;
     align-items: center;
     justify-content: center;
+    a{
+        text-decoration: none;
+        color: black;
+    }
 }
