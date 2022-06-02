@@ -8,82 +8,101 @@
         <title>tp3 ohmyfood</title>
     </head>
 <body>
+
     <header class="mainhead">
-        <div class="logo"><img src="/images/logo/ohmyfood@2x.svg" alt="logo">
-        </div>
+        <img src="/images/logo/ohmyfood@2x.svg" alt="logo" class="mainhead__logo">
     </header>
-    <section class="search">
-        <article>
-            <header class="headcontainer">
-                <i class="fa-solid fa-location-dot"></i>
-                <p>Paris, Belleville</p>
-            </header>
-            <div class="text">
+
+    <section id="search" class="search">
+        <header class="loc loc--search">
+            <p><i class="fa-solid fa-location-dot"></i>Paris, Belleville</p>
+        </header>
+        <div class="text text--search">
                 <span>Réservez le menu qui vous convient</span>
                 <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
-                <button class="button" type="submit">Explorer nos restaurants</button>
-            </div>
-        </article>
-        <aside>
+                <button class="btn search__btn" type="submit">Explorer nos restaurants</button>
+        </div>
+    </section>
+        
+        <section id="fonct" class="fonct">
             <h3>Fonctionnement</h3>
-            <div class="filters"><a href="#">
-                <i class="fa-solid fa-1"></i>
-                <i class="fa-solid fa-mobile"></i>
-                Choisissez un restaurant
-            </a></div>
-            <div class="filters"><a href="#">
+            <div class="fonct fonct--filters">
+                <a href="#">
+                    <i class="fa-solid fa-1"></i>
+                    <i class="fa-solid fa-mobile"></i>
+                    Choisissez un restaurant
+                </a>
+            </div>
+            <div class="fonct fonct--filters">
+                <a href="#">
                 <i class="fa-solid fa-2"></i>
                 <i class="fa-solid fa-list"></i>
                 Composez votre menu
             </a></div>
-            <div class="filters"><a href="#">
+            <div class="fonct fonct--filters">
+                <a href="#">
                 <i class="fa-solid fa-3"></i>
                 <i class="fa-solid fa-store"></i>
                 Dégustez au restaurant
             </a></div>
-        </aside>
-    </section>
-    <section class="restaurant">
+        </section>
+    
+
+    <section id="restaurant" class="restaurant">
         <h1>Restaurants</h1>
-        <div class="container">
-            <div class="card"><a href="pages/tp3-menu1.html">
-                <img src="/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="lapalette">
-                <div class="footercard">
-                    <div class="text">
-                        <h2>La palette du goût</h2>
-                        <p>Ménilmontant</p>
+        <div class="container--card">
+            <div class="card card--menu1">
+                <a href="pages/tp3-menu1.html">
+                    <img src="/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="lapalette">
+                    <div class="card card__info">
+                        <div class="card__info__text">
+                            <h2>La palette du goût</h2>
+                            <p>Ménilmontant</p>
+                        </div>
+                        <div class="card__info_heart">&#x2661;
+                        </div>
                     </div>
-                    <div class="heart">&#x2661;</div>
-                </div>
-            </a></div>
-            <div class="card"><a href="/pages/tp3-menu2.html">
-                <img src="/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="lanote">
-                <div class="footercard">
-                    <div class="text">
-                        <h2>La note enchantée</h2>
-                        <p>Charonne</p>
+                </a>
+            </div>
+            <div class="card card--menu2">
+                <a href="/pages/tp3-menu2.html">
+                    <img src="/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="lanote">
+                    <div class="card card__info">
+                        <div class="card__info__text">
+                            <h2>La note enchantée</h2>
+                            <p>Charonne</p>
+                        </div>
+                        <div class="card__info_heart">&#x2661;
+                        </div>
                     </div>
-                    <div class="heart">&#x2661;</div>
-                </div>
-            </a></div><div class="card"><a href="/pages/tp3-menu1.html">
-                <img src="/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="alafrançaise">
-                <div class="footercard">
-                    <div class="text">
-                        <h2>A la française</h2>
-                        <p>Cité rouge</p>
+                </a>
+            </div>
+            <div class="card card--menu3">
+                <a href="/pages/tp3-menu1.html">
+                    <img src="/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="alafrançaise">
+                    <div class="card card__info">
+                        <div class="card__info__text">
+                            <h2>A la française</h2>
+                            <p>Cité rouge</p>
+                        </div>
+                        <div class="card__info_heart">&#x2661;
+                        </div>
                     </div>
-                    <div class="heart">&#x2661;</div>
-                </div>
-            </a></div><div class="card"><a href="/pages/tp3-menu4.html">
-                <img src="/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="ledélice">
-                <div class="footercard">
-                    <div class="text">
-                        <h2>Le délice des sens</h2>
-                        <p>Folie-Méricourt</p>
+                </a>
+            </div>
+            <div class="card card--menu4">
+                <a href="/pages/tp3-menu4.html">
+                    <img src="/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="ledélice">
+                    <div class="card card__info">
+                        <div class="card__info__text">
+                            <h2>Le délice des sens</h2>
+                            <p>Folie-Méricourt</p>
+                        </div>
+                        <div class="card__info_heart">&#x2661;</div>
                     </div>
-                    <div class="heart">&#x2661;</div>
-                </div>
-            </a></div>
+                </a>
+            </div>
+        </div>
     </section>
     <footer>
         <header class="headfooter">

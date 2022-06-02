@@ -16,101 +16,159 @@
         </div>
     </header>
     <img src="/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="lapalette">
-    <main class="blocpage">
-        <title>
-            <h1>La palette du goût</h1>
-            <p>&#x2661;</p>
-        </title>
-        <div class="bloc">
-            <h3>ENTREES</h3>
-            <section> 
-                <article class="choice">
-                    <span>Fricassée d'escargot</span>
-                    <p>Au piment d'Espelette</p>
-                </article>
-                <aside class="price">
-                <p>25&euro</p>
-                </aside>
-            </section>
-            <section> 
-                <article class="choice">
-                    <span>Foie gras de canard mi-cuit</span>
-                    <p>Et ses copeaux de truffe noire</p>
-                <aside class="price">
-                    <p>35&euro</p>
-                </aside>
-            </section>
-            <section> 
-                <article class="choice">
-                    <span>Oeuf au plat</span>
-                    <p>Assaisonné à la truffe sur lit de caviar</p>
-                <aside class="price">
-                    <p>20&euro</p>
-                </aside>
-            </section>
-        </div>
-        <div class="bloc">
-            <h3>PLATS</h3>
-            <section> 
-                <article class="choice">
-                    <span>Filet de boeuf aux herbes</span>
-                    <p>Accompagné de sa ribambelle de légumes</p>
-                </article>
-                <aside class="price">
-                <p>40&euro</p>
-                </aside>
-            </section>
-            <section> 
-                <article class="choice">
-                    <span>Parmentier de queue de boeuf</span>
-                    <p>À la truffe noire sur sa purée de panais</p>
-                </article>
-                <aside class="price">
-                <p>35&euro</p>
-                </aside>
-            </section>
-            <section> 
-                <article class="choice">
-                    <span>Filet de turbot</span>
-                    <p>Aux agrumes</p>
-                </article>
-                <aside class="price">
-                <p>44&euro</p>
-                </aside>
-            </section>
-        </div>
-        <div class="bloc">
-            <h3>DESSERTs</h3>
-            <section> 
-                <article class="choice">
-                    <span>Paris-Brest</span>
-                    <p>Revisité</p>
-                </article>
-                <aside class="price">
-                <p>18&euro</p>
-                </aside>
-            </section>
-            <section> 
-                <article class="choice">
-                    <span>Macaron au chocolat d'exception</span>
-                    <p>Et glace à la vanille de Madagascar</p>
-                </article>
-                <aside class="price">
-                <p>22&euro</p>
-                </aside>
-            </section>
-            <section> 
-                <article class="choice">
-                    <span>Mousse au chocolat</span>
-                    <p>Au piment d'Espelette et à la truffe noire</p>
-                </article>
-                <aside class="price">
-                <p>23&euro</p>
-                </aside>
-            </section>
-        </div>
-        <button class="button" type="submit"><span>Commander</span></button>
-    </main>
+    
+    <form method="post" action="traitement.php" class="form"></form>
+        <main class="blocpage">
+            <title class="blocpage__title">
+                <h1>La palette du goût</h1>
+                <p>&#x2661;</p>
+            </title>
+
+            <div class="bloc"> 
+                <div class="bloc bloc--entries">
+                    <h3>ENTREES</h3>
+
+                    <input type="radio" name="entries" value="escargot" id="escargot"/>
+                    <label for="escargot" class="bloc__choice bloc__card bloc__card--1">
+                        <section class="bloc__choose__card">
+                            <article class="bloc__choose__card__text">
+                                <span>Fricassée d'escargot</span>
+                                <p>Au piment d'Espelette</p>
+                            </article>
+                            <aside class="bloc__choose__card__price">25&euro;
+                            </aside>
+                        </section>
+                            <div class="block__choose__hover"><i class="fa-solid fa-circle-check"></i>
+                            </div>
+                    </label>
+
+                    <input type="radio" name="entries" value="fgmc" id="fgmc"/>
+                    <label for="fgmc" class="bloc__choice bloc__card bloc__card--2">
+                        <section class="bloc__choose__card">
+                            <article class="bloc__choose__card__text">
+                                <span>Foie gras de canard mi-cuit</span>
+                                <p>Et ses copeaux de truffe noire</p>
+                            </article>
+                            <aside class="bloc__choose__card__price">35&euro;
+                            </aside>
+                        </section>
+                            <div class="block__choose__hover"><i class="fa-solid fa-circle-check"></i>
+                            </div>
+                    </label>
+
+                    <input type="radio" name="entries" value="oeuf" id="oeuf"/>
+                    <label for="oeuf" class="bloc__choice bloc__card bloc__card--3">
+                        <section class="bloc__choose__card">
+                            <article class="bloc__choose__card__text">
+                                <span>Oeuf au plat</span>
+                                <p>Assaisonné à la truffe sur lit de caviar</p>
+                            </article>
+                            <aside class="bloc__choose__card__price">20&euro;
+                            </aside>
+                        </section>
+                            <div class="block__choose__hover"><i class="fa-solid fa-circle-check"></i>
+                            </div>
+                    </label>
+                </div>
+
+                <div class="bloc bloc--dish">
+                    <h3>PLATS</h3>
+
+                    <input type="radio" name="dish" value="filetb" id="filetb"/>
+                    <label for="filetb" class="bloc__choice bloc__card bloc__card--1">
+                        <section class="bloc__choose__card">
+                            <article class="bloc__choose__card__text">
+                                <span>Filet de boeuf aux herbes</span>
+                                <p>Accompagné de sa ribambelle de légumes</p>
+                            </article>
+                            <aside class="bloc__choose__card__price">40&euro;
+                            </aside>
+                        </section>
+                            <div class="block__choose__hover"><i class="fa-solid fa-circle-check"></i>
+                            </div>
+                    </label>
+
+                    <input type="radio" name="dish" value="parmentier" id="parmentier"/>
+                    <label for="parmentier" class="bloc__choice bloc__card bloc__card--2">
+                        <section class="bloc__choose__card">
+                            <article class="bloc__choose__card__text">
+                                <span>Parmentier de queue de boeuf</span>
+                                <p>À la truffe noire sur sa purée de panais</p>
+                            </article>
+                            <aside class="bloc__choose__card__price">35&euro;
+                            </aside>
+                        </section>
+                            <div class="block__choose__hover"><i class="fa-solid fa-circle-check"></i>
+                            </div>
+                    </label>
+
+                    <input type="radio" name="dish" value="turbot" id="turbot"/>
+                    <label for="turbot" class="bloc__choice bloc__card bloc__card--3">
+                        <section class="bloc__choose__card">
+                            <article class="bloc__choose__card__text">
+                                <span>Filet de turbot</span>
+                                <p>Aux agrumes</p>
+                            </article>
+                            <aside class="bloc__choose__card__price">44&euro;
+                            </aside>
+                        </section>
+                            <div class="block__choose__hover"><i class="fa-solid fa-circle-check"></i>
+                            </div>
+                    </label>
+                </div>
+
+                <div class="bloc bloc--dessert">
+                    <h3>DESSERTS</h3>
+
+                    <input type="radio" name="dessert" value="parisb" id="parisb"/>
+                    <label for="parisb" class="bloc__choice bloc__card bloc__card--1">
+                        <section class="bloc__choose__card">
+                            <article class="bloc__choose__card__text">
+                                <span>Paris-Brest</span>
+                                <p>Revisité</p>
+                            </article>
+                            <aside class="bloc__choose__card__price">18&euro;
+                            </aside>
+                        </section>
+                            <div class="block__choose__hover"><i class="fa-solid fa-circle-check"></i>
+                            </div>
+                    </label>
+
+                    <input type="radio" name="dessert" value="macaronc" id="macaronc"/>
+                    <label for="macaronc" class="bloc__choice bloc__card bloc__card--2">
+                        <section class="bloc__choose__card">
+                            <article class="bloc__choose__card__text">
+                                <span>Macaron au chocolat d'exception</span>
+                                <p>Et glace à la vanille de Madagascar</p>
+                            </article>
+                            <aside class="bloc__choose__card__price">22&euro;
+                            </aside>
+                        </section>
+                            <div class="block__choose__hover"><i class="fa-solid fa-circle-check"></i>
+                            </div>
+                    </label>
+
+                    <input type="radio" name="dessert" value="moussec" id="moussec"/>
+                    <label for="moussec" class="bloc__choice bloc__card bloc__card--3">
+                        <section class="bloc__choose__card">
+                            <article class="bloc__choose__card__text">
+                                <span>Mousse au chocolat</span>
+                                <p>Au piment d'Espelette et à la truffe noire</p>
+                            </article>
+                            <aside class="bloc__choose__card__price">23&euro;
+                            </aside>
+                        </section>
+                            <div class="block__choose__hover"><i class="fa-solid fa-circle-check"></i>
+                            </div>
+                    </label>
+                </div>
+            </div>
+
+            <input type="submit" value="Commander" class="btn btn--submit"/>
+
+        </main>
+    </form>
+    
     <footer>
         <header class="headfooter">
             <img src="/images/logo/ohmyfood@2x.svg" alt="logo">

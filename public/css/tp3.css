@@ -1,11 +1,11 @@
 .mainhead {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .buttonreturn {
-  position: absolute;
+  position: relative;
 }
 
 .search {
@@ -49,7 +49,7 @@ aside {
 }
 
 body {
-  width: 90%;
+  width: 100%;
   height: 100%;
 }
 
@@ -131,6 +131,20 @@ ul li {
 }
 ul li i {
   padding-right: 5px;
+}
+
+body {
+  margin-inline: 0%;
+}
+
+img {
+  width: 100%;
+  justify-content: center;
+}
+
+.blocpage {
+  background-color: rgba(169, 169, 169, 0.24);
+  border-radius: 10%;
 }
 
 /*# sourceMappingURL=tp3.css.map */

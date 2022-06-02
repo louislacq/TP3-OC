@@ -16,131 +16,193 @@
         </div>
     </header>
     <img src="/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="lanote">
-    <main class="blocpage">
-        <title>
-            <h1>La note enchantée</h1>
-            <p>&#x2661;</p>
-        </title>
-        <div class="bloc">
-            <h3>ENTREES</h3>
-            <section> 
-                <article class="choice">
-                    <span>Ravioles de foie gras</span>
-                    <p>Accompagnés de leur crème à la truffe</p>
-                </article>
-                <aside class="price">
-                <p>25&euro</p>
-                </aside>
-            </section>
-            <section> 
-                <article class="choice">
-                    <span>Caviar osciètre</span>
-                    <p>Sur blini à la farine de blé noir</p>
-            
-                <aside class="price">
-                    <p>35&euro</p>
-                </aside>
-            </section>
-            <section> 
-                <article class="choice">
-                    <span>Homard et espuma de potiron</span>
-                    <p>Mariné aux zestes d'orange</p>
-            
-                <aside class="price">
-                    <p>20&euro</p>
-                </aside>
-            </section>
-            <section> 
-                <article class="choice">
-                    <span>Foie gras de canard cuit entier</span>
-                    <p>Confiture de figue et pain toasté</p>
-                <aside class="price">
-                    <p>35&euro</p>
-                </aside>
-            </section>
-        </div>
-        <div class="bloc">
-            <h3>PLATS</h3>
-            <section> 
-                <article class="choice">
-                    <span>Noix de coquilles Saint-Jacques</span>
-                    <p>Sur lit de purée de céleri-rave</p>
-                </article>
-                <aside class="price">
-                <p>40&euro</p>
-                </aside>
-            </section>
-            <section> 
-                <article class="choice">
-                    <span>Langoustine poêlée</span>
-                    <p>Purée de patate douce</p>
-                </article>
-                <aside class="price">
-                <p>35&euro</p>
-                </aside>
-            </section>
-            <section> 
-                <article class="choice">
-                    <span>Mijoté de queue de boeuf</span>
-                    <p>Et riz sauvage aux zestes de citron</p>
-                </article>
-                <aside class="price">
-                <p>44&euro</p>
-                </aside>
-            </section>
-        </div>
-        <div class="bloc">
-            <h3>DESSERTs</h3>
-            <section> 
-                <article class="choice">
-                    <span>Macaron noisette et chocolat</span>
-                    <p>Glace au caramel brun et sel de Guérande</p>
-                </article>
-                <aside class="price">
-                <p>18&euro</p>
-                </aside>
-            </section>
-            <section> 
-                <article class="choice">
-                    <span>Baba au rhum revisité</span>
-                    <p>Avec son coulis de citron</p>
-                </article>
-                <aside class="price">
-                <p>22&euro</p>
-                </aside>
-            </section>
-            <section> 
-                <article class="choice">
-                    <span>Tarte au citron meringuée</span>
-                    <p>Déstructurée</p>
-                </article>
-                <aside class="price">
-                <p>2&euro</p>
-                </aside>
-            </section>
-        </div>
-        <button class="button" type="submit"><span>Commander</span></button>
-    </main>
-    <footer>
-        <header class="headfooter">
-            <img src="/images/logo/ohmyfood@2x.svg" alt="logo">
-        </header>
-        <ul>
-            <li>
-                <i class="fa-solid fa-utensils"></i>
-                <p>Proposer un restaurant</p>
-            </li>
-            <li>
-                <i class="fa-solid fa-handshake-angle"></i>
-                <p>Devenir partenaire</p>
-            </li>
-            <li>
-                <p>Mentioons légales</p>
-            </li>
-            <li>
-                <p>Contact</p>
-            </li>
-        </ul>
-    </footer>    
+
+    <form method="post" action="traitement.php" class="form"></form>
+        <main class="blocpage">
+            <title class="blocpage__title">
+                <h1>La note enchantée</h1>
+                <p>&#x2661;</p>
+            </title>
+
+            <div class="bloc"> 
+                <div class="bloc bloc--entries">
+                    <h3>ENTREES</h3>
+
+                    <input type="radio" name="entries" value="ravioles" id="ravioles"/>
+                    <label for="ravioles" class="bloc__choice bloc__card bloc__card--1">
+                        <section class="bloc__choose__card">
+                            <article class="bloc__choose__card__text">
+                                <span>Ravioles de foie gras</span>
+                                <p>Accompagnés de leur crème à la truffe</p>
+                            </article>
+                            <aside class="bloc__choose__card__price">25&euro;
+                            </aside>
+                        </section>
+                            <div class="block__choose__hover"><i class="fa-solid fa-circle-check"></i>
+                            </div>
+                    </label>
+
+                    <input type="radio" name="entries" value="caviar" id="caviar"/>
+                    <label for="caviar" class="bloc__choice bloc__card bloc__card--2">
+                        <section class="bloc__choose__card">
+                            <article class="bloc__choose__card__text">
+                                <span>Caviar osciètre</span>
+                                <p>Sur blini à la farine de blé noir</p>
+                            </article>
+                            <aside class="bloc__choose__card__price">35&euro;
+                            </aside>
+                        </section>
+                            <div class="block__choose__hover"><i class="fa-solid fa-circle-check"></i>
+                            </div>
+                    </label>
+
+                    <input type="radio" name="entries" value="homardes" id="homardes"/>
+                    <label for="homardes" class="bloc__choice bloc__card bloc__card--3">
+                        <section class="bloc__choose__card">
+                            <article class="bloc__choose__card__text">
+                                <span>Homard et espuma de potiron</span>
+                                <p>Mariné aux zestes d'orange</p>
+                            </article>
+                            <aside class="bloc__choose__card__price">20&euro;
+                            </aside>
+                        </section>
+                            <div class="block__choose__hover"><i class="fa-solid fa-circle-check"></i>
+                            </div>
+                    </label>
+
+                    <input type="radio" name="entries" value="fgc" id="fgc"/>
+                    <label for="fgc" class="bloc__choice bloc__card bloc__card--4">
+                        <section class="bloc__choose__card">
+                            <article class="bloc__choose__card__text">
+                                <span>Foie gras de canard cuit entier</span>
+                                <p>Confiture de figue et pain toasté</p>
+                            </article>
+                            <aside class="bloc__choose__card__price">35&euro;
+                            </aside>
+                        </section>
+                            <div class="block__choose__hover"><i class="fa-solid fa-circle-check"></i>
+                            </div>
+                    </label>
+                </div>
+
+                <div class="bloc bloc--dish">
+                    <h3>PLATS</h3>
+
+                    <input type="radio" name="dish" value="noixjacques" id="noixjacques"/>
+                    <label for="noixjacques" class="bloc__choice bloc__card bloc__card--1">
+                        <section class="bloc__choose__card">
+                            <article class="bloc__choose__card__text">
+                                <span>Noix de coquilles Saint-Jacques</span>
+                                <p>Sur lit de purée de céleri-rave</p>
+                            </article>
+                            <aside class="bloc__choose__card__price">40&euro;
+                            </aside>
+                        </section>
+                            <div class="block__choose__hover"><i class="fa-solid fa-circle-check"></i>
+                            </div>
+                    </label>
+
+                    <input type="radio" name="dish" value="langoustine" id="langoustine"/>
+                    <label for="langoustine" class="bloc__choice bloc__card bloc__card--2">
+                        <section class="bloc__choose__card">
+                            <article class="bloc__choose__card__text">
+                                <span>Langoustine poêlée</span>
+                                <p>Purée de patate douce</p>
+                            </article>
+                            <aside class="bloc__choose__card__price">35&euro;
+                            </aside>
+                        </section>
+                            <div class="block__choose__hover"><i class="fa-solid fa-circle-check"></i>
+                            </div>
+                    </label>
+
+                    <input type="radio" name="dish" value="qboeuf" id="qboeuf"/>
+                    <label for="qboeuf" class="bloc__choice bloc__card bloc__card--3">
+                        <section class="bloc__choose__card">
+                            <article class="bloc__choose__card__text">
+                                <span>Mijoté de queue de boeuf</span>
+                                <p>Et riz sauvage aux zestes de citron</p>
+                            </article>
+                            <aside class="bloc__choose__card__price">44&euro;
+                            </aside>
+                        </section>
+                            <div class="block__choose__hover"><i class="fa-solid fa-circle-check"></i>
+                            </div>
+                    </label>
+                </div>
+
+                <div class="bloc bloc--dessert">
+                    <h3>DESSERTS</h3>
+
+                    <input type="radio" name="dessert" value="macaronnc" id="macaronnc"/>
+                    <label for="macaronnc" class="bloc__choice bloc__card bloc__card--1">
+                        <section class="bloc__choose__card">
+                            <article class="bloc__choose__card__text">
+                                <span>Macaron noisette et chocolat</span>
+                                <p>Glace au caramel brun et sel de Guérande</p>
+                            </article>
+                            <aside class="bloc__choose__card__price">18&euro;
+                            </aside>
+                        </section>
+                            <div class="block__choose__hover"><i class="fa-solid fa-circle-check"></i>
+                            </div>
+                    </label>
+
+                    <input type="radio" name="dessert" value="baba" id="baba"/>
+                    <label for="baba" class="bloc__choice bloc__card bloc__card--2">
+                        <section class="bloc__choose__card">
+                            <article class="bloc__choose__card__text">
+                                <span>Baba au rhum revisité</span>
+                                <p>Avec son coulis de citron</p>
+                            </article>
+                            <aside class="bloc__choose__card__price">22&euro;
+                            </aside>
+                        </section>
+                            <div class="block__choose__hover"><i class="fa-solid fa-circle-check"></i>
+                            </div>
+                    </label>
+
+                    <input type="radio" name="dessert" value="tartecm" id="tartecm"/>
+                    <label for="tartecm" class="bloc__choice bloc__card bloc__card--3">
+                        <section class="bloc__choose__card">
+                            <article class="bloc__choose__card__text">
+                                <span>Tarte au citron meringuée</span>
+                                <p>Déstructurée</p>
+                            </article>
+                            <aside class="bloc__choose__card__price">23&euro;
+                            </aside>
+                        </section>
+                            <div class="block__choose__hover"><i class="fa-solid fa-circle-check"></i>
+                            </div>
+                    </label>
+                </div>
+            </div>
+
+            <input type="submit" value="Commander" class="btn btn--submit"/>
+
+        </main>
+    </form>
+
+<footer>
+    <header class="headfooter">
+        <img src="/images/logo/ohmyfood@2x.svg" alt="logo">
+    </header>
+    <ul>
+        <li>
+            <i class="fa-solid fa-utensils"></i>
+            <p>Proposer un restaurant</p>
+        </li>
+        <li>
+            <i class="fa-solid fa-handshake-angle"></i>
+            <p>Devenir partenaire</p>
+        </li>
+        <li>
+            <p>Mentioons légales</p>
+        </li>
+        <li>
+            <p>Contact</p>
+        </li>
+    </ul>
+</footer>    
 </body>
 </html>
